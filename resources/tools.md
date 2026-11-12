@@ -118,6 +118,17 @@ Each entry uses the repository metadata format: resource type, producer, source,
 - Last checked: 2026-07-01.
 - Limitations or caveats: A runtime detection-and-control layer, not a complete governance stack. Reasoning-trace analysis depends on the agent exposing its reasoning, and detection is a bounded signal rather than proof that the full execution system is secure.
 
+### ControlLayer
+
+- Resource type: Open-source deterministic runtime authorisation layer for tool-using agents.
+- Producer or publisher: Garros Gong.
+- Source link: <https://github.com/garroshub/ControlLayer>.
+- Relevance to agentic execution security: Checks user authorisation before an agent executes a tool call, covering policy, identity, destination and permitted source content, with auditable task recovery.
+- Coverage: Execution-time authorisation gates, provenance checks, paired AgentDojo evaluation, audit records, and an interactive demonstration page.
+- Evidence quality and maturity level: Early-stage project. A local paired AgentDojo v1 evaluation reports 47/97 completed tasks against 44/97 for a rules baseline, with 0/54 official attack scores against 1/54; the paired McNemar test gives p = 0.25, so the evidence is limited.
+- Last checked: 2026-11-11.
+- Limitations or caveats: Deterministic checks only, with a local and small evaluation and no production deployment. Observed zero unauthorised writes is not a universal safety guarantee.
+
 ### Lakera Guard And Lakera Red
 
 - Resource type: Commercial runtime protection and red teaming products.
